@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Feedback Form</title>
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1>360 Degree Feedback Form</h1>
+        <h3><em> We value your repsonse</em></h3>
+        <p>
+          We would love to hear your thoughts, suggestions, concerns or problems
+          with anything so we can improve!
+        </p>
+      </center>
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <p>
+            <label for="Username"> Username :</label>
+            <input
+              type="text"
+              name="Username"
+              id="Username"
+              placeholder="Username"
+              required
+              autofocus
+              autocomplete="on"
+            />
+          </p>
+          <p>
+            <label for="First"> First Name : </label>
+            <input
+              type="text"
+              name="First"
+              id="First"
+              placeholder="First Name"
+              autofocus
+              required
+              autocomplete="on"
+            />
+          </p>
+          <p>
+            <label for="Last"> Last Name : </label>
+            <input
+              type="text"
+              name="Last"
+              id="Last"
+              placeholder="Last Name"
+              autofocus
+              required
+              autocomplete="on"
+            />
+          </p>
+          <p>
+            <label for="email">Email : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="somebody@example.com"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone number : </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+91 1234567890"
+              pattern="+91 [0-9]{10}"
+              required
+            />
+          </p>
+          <p>
+            <label for="age">Age : </label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="25"
+              max="150"
+              min="18"
+              step="1"
+              autocomplete="on"
+              autofocus
+              required
+            />
+            <small>
+              <strong><em>*18 years minimum*</em></strong>
+            </small>
+          </p>
+          <p>
+            <label for="sex">Sex : </label>
+            <input type="radio" id="sexChoice1" name="sex" value="male" />
+            <label for="sexChoice1">Male</label>
+
+            <input type="radio" id="sexChoice2" name="sex" value="female" />
+            <label for="sexChoice2">Female</label>
+
+            <input type="radio" id="sexChoice3" name="sex" value="other" />
+            <label for="sexChoice3">Other</label>
+          </p>
+          <p>
+            <label for="avatar">Upload your photo: </label>
+            <input
+              type="file"
+              name="avatar"
+              id="avatar"
+              accept="image/png,image/jpg"
+            />
+            only accepts <strong>JPG, PNG</strong> formats
+            
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Event Type</legend>
+          <p>
+            <label for="event-type">Choose the type of event : </label>
+            <input
+              type="text"
+              name="items-list"
+              id="items-list"
+              list="list-items"
+              required
+              autofocus
+              autocomplete="off"
+            />
+            <datalist id="list-items">
+              <option value="Concert"></option>
+              <option value="Movie"></option>
+              <option value="Reality Show"></option>
+              <option value="Speech"></option>
+              <option value="Orchestra"></option>
+            </datalist>
+          </p>
+          <p>
+            <label for="location">Choose the City : </label>
+            <select name="location" id="location">
+              <option value="default">select</option>
+              <optgroup label="Telangana">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Secunderabad">Secunderabad</option>
+              </optgroup>
+              <optgroup label="Tamil Nadu">
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+              </optgroup>
+              <optgroup label="Andhra Pradesh">
+                <option value="Vizag">Vizag</option>
+                <option value="Guntur">Guntur</option>
+              </optgroup>
+              <optgroup label="Kerala">
+                <option value="Kochi">Kochi</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label for="event-name"> Event Name : </label>
+            <input
+              type="text"
+              name="event-name"
+              id="event-name"
+              placeholder="Event Name"
+              autofocus
+              required
+              autocomplete="on"
+            />
+          </p>
+          <p>
+            <label for="event-date">Date of the event : </label>
+            <input
+              type="date"
+              id="event-date"
+              name="event-date"
+              value="2018-07-22"
+              required
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Event Survey</legend>
+          <p>
+            <label for="service">
+              Check all the services that you liked :
+            </label>
+            <input type="checkbox" id="transport" name="transport" />
+            <label for="transport">Transport</label>
+            <input type="checkbox" id="accomodation" name="accomodation" />
+            <label for="accomodation">Accomodation</label>
+            <input
+              type="checkbox"
+              id="Engagement of speakers"
+              name="Engagement of speakers"
+            />
+            <label for="Engagement of speakers">Engagement of speakers</label>
+            <input type="checkbox" id="Food" name="Food" />
+            <label for="Food">Food</label>
+          </p>
+          <p>
+            <label for="scale"
+              >On a scale of "red" to "green" , how likely did u like the event
+              choose the color :
+            </label>
+            <table>
+                <tr>
+                    <td>
+                        Green : Likely
+                    </td>
+                    <td rowspan="3">
+                        
+                        <input type="color" id="head" name="head" value="#4caf50" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Yellow : Ok
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Red : Not Likely
+                    </td>
+                </tr>
+            </table>
+          </p>
+          <table>
+            <tr>
+                <td rowspan="2">
+                    <label for="rating">Can you please rate the event again using stars : </label>
+                </td>
+                <td>
+                    <input type="range" id="rating" name="rating" min="1" max="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="star.jpg" alt="" height="23px">
+                    <img src="star.jpg" alt="" height="23px">
+                    <img src="star.jpg" alt="" height="23px">
+                    <img src="star.jpg" alt="" height="23px">
+                    <img src="star.jpg" alt="" height="23px">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td colspan="2">
+                    Can you rate a few questions
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Question 1 :
+                </td>
+                <td>
+                    <input type="radio" id="Choice1" name="rates1" value="Excellent" />
+                    <label for="Choice1">Excellent</label>
+        
+                    <input type="radio" id="Choice2" name="rates1" value="Good" />
+                    <label for="Choice2">Good</label>
+        
+                    <input type="radio" id="Choice3" name="rates1" value="Satisfactory" />
+                    <label for="Choice3">Satisfactory</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Question 2 :
+                </td>
+                <td>
+                    <input type="radio" id="Choice1" name="rates2" value="Excellent" />
+                    <label for="Choice1">Excellent</label>
+        
+                    <input type="radio" id="Choice2" name="rates2" value="Good" />
+                    <label for="Choice2">Good</label>
+        
+                    <input type="radio" id="Choice3" name="rates2" value="Satisfactory" />
+                    <label for="Choice3">Satisfactory</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Question 3 :
+                </td>
+                <td>
+                    <input type="radio" id="Choice1" name="rates3" value="Excellent" />
+                    <label for="Choice1">Excellent</label>
+        
+                    <input type="radio" id="Choice2" name="rates3" value="Good" />
+                    <label for="Choice2">Good</label>
+        
+                    <input type="radio" id="Choice3" name="rates3" value="Satisfactory" />
+                    <label for="Choice3">Satisfactory</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Question 4 :
+                </td>
+                <td>
+                    <input type="radio" id="Choice1" name="rates4" value="Excellent" />
+                    <label for="Choice1">Excellent</label>
+        
+                    <input type="radio" id="Choice2" name="rates4" value="Good" />
+                    <label for="Choice2">Good</label>
+        
+                    <input type="radio" id="Choice3" name="rates4" value="Satisfactory" />
+                    <label for="Choice3">Satisfactory</label>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <label for="event-yes"> Will you attend this event again? Please mention yes/ no</label>
+            <select name="event-yes" id="event-yes">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Suggestion box</legend>
+            <label for="suggestion">Any suggestion please mention : </label>
+            <br>
+            <br>
+            <textarea id="suggestion" name="suggestion" rows="4" cols="50" placeholder="Happy to hear from you!!"></textarea>
+        </fieldset>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

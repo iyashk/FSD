@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <p>text 1</p>
+      <input type="text" id="field1" /> <br />
+      <p>text2</p>
+      <input type="text" id="field2" /> <br />
+      <p>text 3</p>
+      <input type="text" id="field3" /> <br />
+      <button type="submit">Submit</button>
+      <button type="reset" onclick="clearFields()">Reset</button>
+    </form>
+    <script>
+      let button = document.getElementsByTagName("button")[0];
+      function checkFields() {
+        var field1 = document.getElementById("field1").value;
+        var field2 = document.getElementById("field2").value;
+        var field3 = document.getElementById("field3").value;
+
+        if (field1 === "" || field2 === "" || field3 === "") {
+          alert("Please fill in all fields.");
+          return false;
+        }
+        return true;
+      }
+      button.addEventListener("click", checkFields);
+      //Question 14
+      let button2 = document.getElementsByTagName("button")[1];
+      function clearFields() {
+        document.getElementById("field1").value = "";
+        document.getElementById("field2").value = "";
+        document.getElementById("field3").value = "";
+      }
+
+      button.addEventListener("click", clearFields);
+      //Question 15
+      let text = document.getElementById("field1");
+
+      function validateName() {
+        var nameField = document.getElementById("field1");
+        var nameValue = nameField.value;
+
+        // Check if name field contains digits or special characters
+        var invalidChars = /[0-9~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g;
+        if (invalidChars.test(nameValue)) {
+          alert("Invalid input");
+          nameField.value = nameValue.replace(invalidChars, "");
+          return false;
+        }
+        return true;
+      }
+
+      text.addEventListener("keypress", validateName);
+    </script>
+  </body>
+</html>
