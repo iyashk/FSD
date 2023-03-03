@@ -14,7 +14,7 @@
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#publications">Publications</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="">Experiences</a></li>
           <li><a href="">Extra-Curriculars</a></li>
           <li><a href="">Certifications</a></li>
@@ -211,7 +211,23 @@
             <p>
               Timeline : Jul 2022
               <br />
-              Developed a Python-based interface that accepts a photo and feeds
+              <ul>
+                <li>
+                  A hardware implemented robot using Raspberry Pi, motor driver and simple robot kit.
+                </li>
+                <li>
+                  Developed an interface using python, which will take images that are either stored locally or can be fetched using an external camera.
+                </li>
+                <li>
+                  This image now fed to a program that commands a turtlesim bot in a ROS simulation to trace the contour of the input image. The contour can also be tuned with adjustments made to the noise, reducing the complexity etc.
+                </li>
+                <li>
+                  Now for every closed loop in the contour, with the help of multi-threading a new turtlesim bot is generated and traces the contour.
+                </li>
+                <li>
+                  The tracing is simulated in the 
+                </li>              </ul>
+              A Python-based interface that accepts a photo and feeds
               it to a multi-threaded turtlesim bot in a ROS simulation that maps
               the contour of the given input image and then commands a
               hardware-implemented 4-wheeled droid built using a raspberry pi
