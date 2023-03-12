@@ -1,10 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- <header class="fixed-top">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="about.html">Yashwanth Kiran</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/photos.html">Memories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/projects.html">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Certifications
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><abbr title="Artificial Intelligence/Machine Learning"
+                        >AI/ML</abbr
+                      ></a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Other</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+    <main class="my-5 py-5">
+      <!-- Carousel wrapper -->
+      <div
+        id="carouselMultiItemExample"
+        class="carousel slide carousel-dark text-center"
+        data-mdb-ride="carousel"
+      >
+        <!-- Controls -->
+        <div class="d-flex justify-content-center mb-4">
+          <button
+            class="carousel-control-prev position-relative"
+            type="button"
+            data-mdb-target="#carouselMultiItemExample"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next position-relative"
+            type="button"
+            data-mdb-target="#carouselMultiItemExample"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Inner -->
+        <div class="carousel-inner py-4">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <h1>hero</h1>
+                <div class="col-lg-4">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
+                      class="card-img-top"
+                      alt="Waterfall"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
+                      class="card-img-top"
+                      alt="Sunset over the Sea"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-12">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                      class="card-img-top"
+                      alt="Fissure in Sandstone"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+                      class="card-img-top"
+                      alt="Storm Clouds"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                      class="card-img-top"
+                      alt="Hot Air Balloons"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
+                      class="card-img-top"
+                      alt="Peaks Against the Starry Sky"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
+                      class="card-img-top"
+                      alt="Bridge Over Water"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
+                      class="card-img-top"
+                      alt="Purbeck Heritage Coast"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+      </div>
+      <!-- Carousel wrapper -->
+    </main>
+    <footer class="mb-3">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col text-decoration-none">
+            <p class="text-center m-0 p-2">&copy;Yashwanth Kiran</p>
+            <a href="" class="text-decoration-none">
+              <img
+                src="img/81609.png"
+                alt=""
+                height="20px"
+                width="20px"
+                class=""
+              />
+            </a>
+            <a href="" class="text-decoration-none">
+              <img
+                src="img/vecteezy_linkedin-american-business-logo-social-media-icon-black_3692704.jpg"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+            </a>
+            <a href="" class="text-decoration-none">
+              <img src="img/mail.png" alt="" height="25px" width="25px" />
+            </a>
+
+            <!-- <a href=""><img src="" alt="" /></a> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
